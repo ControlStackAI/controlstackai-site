@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS leads (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id TEXT PRIMARY KEY,
+  createdAt TEXT NOT NULL,
   name TEXT NOT NULL,
   email TEXT NOT NULL,
-  message TEXT NOT NULL,
-  created_at TEXT NOT NULL,
-  ip TEXT
+  company TEXT,
+  message TEXT NOT NULL
 );
-CREATE INDEX IF NOT EXISTS idx_leads_created_at ON leads(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_leads_createdAt ON leads(createdAt DESC);
