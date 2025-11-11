@@ -1,0 +1,30 @@
+:root{
+  --navy:#0E2336; --sky:#1E88E5; --teal:#12B5A5; --lime:#22C55E;
+  --slate700:#334155; --slate300:#CBD5E1; --cloud:#F8FAFC; --ink:#0b1220;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--cloud);color:var(--ink)}
+a{color:var(--sky);text-decoration:none}
+.shell{max-width:1100px;margin:0 auto;padding:0 16px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:14px 0;background:var(--navy);color:white;border-bottom:1px solid rgba(255,255,255,.12)}
+.header a{color:#e6f0ff;margin:0 10px;opacity:.9}
+.header a.active{opacity:1;text-decoration:underline}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .mark{width:24px;height:24px;background:linear-gradient(135deg,var(--teal),var(--sky));border-radius:6px;box-shadow:0 1px 0 rgba(255,255,255,.2) inset, 0 3px 10px rgba(0,0,0,.25)}
+.brand .name{font-weight:700;letter-spacing:.2px}
+.main{padding:26px 0 60px}
+.card{background:white;border:1px solid var(--slate300);border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 1px 0 rgba(255,255,255,.5) inset, 0 6px 24px rgba(2,6,23,.06)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:center}
+.hero .content h1{margin:0 0 10px;font-size:34px;color:var(--navy)}
+.hero .content p{margin:0 0 12px;color:#223}
+.hero .media img{width:100%;height:auto;border-radius:12px;border:1px solid var(--slate300);background:#fff}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{font-size:12px;padding:6px 10px;border-radius:999px;display:inline-flex;align-items:center}
+.badge.ok{background:var(--lime);color:#fff}
+.badge.warn{background:#F59E0B;color:#111}
+.footer{padding:32px 0;color:#334}
+.founders{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
+.note{color:#445;opacity:.8}
+.caption{display:block;margin-top:6px;color:#445;opacity:.8}
+@media (max-width:900px){ .hero{grid-template-columns:1fr} }

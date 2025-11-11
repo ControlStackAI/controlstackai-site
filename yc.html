@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YC Preview · ControlStackAI — Compliance Co‑Pilot</title>
+  <link rel="stylesheet" href="/styles/yc.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="shell header">
+    <div class="brand">
+      <div class="mark"></div>
+      <div class="name">ControlStackAI</div>
+    </div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/privacy.html">Trust</a>
+      <a href="/yc.html" class="active">YC Preview</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shell main">
+    <section class="hero card">
+      <div class="content">
+        <h1>Compliance Co‑Pilot</h1>
+        <p>Audit‑ready automation for aerospace & defense. Controls‑as‑code, verifiable evidence, one‑click Audit Packs. SaaS or on‑prem/air‑gapped.</p>
+        <div class="badges">
+          <span class="badge ok">Zero‑Retention</span>
+          <span class="badge ok">BYOB Artifacts</span>
+          <span class="badge warn">External AI: OFF by default</span>
+        </div>
+      </div>
+      <div class="media">
+        <img src="/assets/yc/ccp-dashboard-mock.png" alt="Compliance Co‑Pilot dashboard mock">
+        <small class="caption">Initial dashboard mock. Live collectors & audit packs in progress.</small>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>What it does</h2>
+        <ul class="list">
+          <li><b>Controls‑as‑code + GitOps</b> across SOC2/ISO/CMMC and DO‑178C/ARP4754A</li>
+          <li><b>Evidence Vault</b> with hashing/signatures & WORM storage</li>
+          <li><b>Drift detection</b> → PRs/tickets or safe remediations</li>
+          <li><b>Audit Packs</b> with timestamps, coverage maps, and traceability</li>
+          <li>Deploy <b>SaaS</b> or <b>on‑prem/air‑gapped</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Why now</h2>
+        <p>Compliance steals cycles from shipping. We turn it into a pipeline with automation auditors can trust—cryptographic evidence and provenance, not screenshots.</p>
+      </div>
+      <div class="card">
+        <h2>Security posture</h2>
+        <ul class="list">
+          <li>Zero‑retention defaults; customer‑owned artifact stores</li>
+          <li>Egress default‑deny; explicit allowlists per tenant</li>
+          <li>Pluggable LLMs; external AI <b>off</b> by default</li>
+          <li>Attestations for all artifacts; signed audit packs</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Roadmap (preview)</h2>
+        <ol class="list numeric">
+          <li>Collectors: AWS/GitHub/Okta/Intune/Jira/Google Workspace</li>
+          <li>Policy synthesis: controls‑as‑code baseline</li>
+          <li>Audit Pack generator + reviewer portal</li>
+          <li>On‑prem/Air‑gap deployment guides</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Founder video & materials</h2>
+      <p>1‑minute intro video and a short product walkthrough will be shared privately with reviewers.</p>
+      <ul class="list">
+        <li>Founder intro (private link)</li>
+        <li>Product walkthrough (private link)</li>
+        <li>One‑pager PDF (download)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    © <span id="y"></span> ControlStackAI — Private preview
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
