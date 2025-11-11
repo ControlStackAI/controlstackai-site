@@ -1,46 +1,53 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Founders · ControlStackAI</title>
-  <link rel="stylesheet" href="/styles/yc.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Founders of ControlStackAI"/>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/styles/tailwind-cdn.js"></script>
+  <style>.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}</style>
 </head>
-<body>
-  <header class="shell header">
-    <div class="brand">
-      <div class="mark"></div>
-      <div class="name">ControlStackAI</div>
+<body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
+        <a href="/about.html" class="hover:text-white">About</a>
+        <a href="/contact.html" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Book a consult</a>
     </div>
-    <nav class="nav">
-      <a href="/">Home</a>
-      <a href="/yc.html">YC Preview</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
   </header>
 
-  <main class="shell main">
-    <section class="card">
-      <h1>Founders</h1>
-      <div class="founders">
-        <div class="founder">
-          <h3>Matthew Mangano — CEO/CTO</h3>
-          <p>Aerospace controls & certification tooling (DO‑178C/ARP4754A). Built flight dynamics/control toolchains, GitOps infra, agentic compliance pipelines.</p>
-        </div>
-        <div class="founder">
-          <h3>John Reed — COO (Finance)</h3>
-          <p>Personal finance & operational rigor. Focus on go‑to‑market, design‑partner relationships, and audit readiness.</p>
-        </div>
+  <main class="mx-auto max-w-7xl px-4 py-16">
+    <section class="glass rounded-2xl border border-white/10 p-8">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-white">Founders</h1>
+      <div class="mt-6 grid gap-6 md:grid-cols-2">
+        <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="text-xl font-semibold text-white">Matthew Mangano — CEO/CTO</h3>
+          <p class="mt-2 text-slate-300">Aerospace controls &amp; certification tooling (DO‑178C/ARP4754A). Built flight dynamics/control toolchains, GitOps infra, agentic compliance pipelines.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="text-xl font-semibold text-white">John Reed — COO (Finance)</h3>
+          <p class="mt-2 text-slate-300">Personal finance &amp; operational rigor. Focus on go‑to‑market, design‑partner relationships, and audit readiness.</p>
+        </article>
       </div>
-      <p class="note">Private founder video link to be shared with YC reviewers only.</p>
+      <p class="mt-6 text-slate-400">Private founder video link to be shared with YC reviewers only.</p>
     </section>
   </main>
 
-  <footer class="shell footer">
-    © <span id="y"></span> ControlStackAI — Private preview
+  <footer class="mt-24 border-t border-white/5">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid gap-6 md:grid-cols-3 text-sm text-slate-400">
+      <div><div class="text-white font-semibold">ControlStackAI</div><div class="text-slate-400">Agentic AI workflows for engineering teams</div></div>
+      <div><div class="font-semibold text-slate-300 mb-2">Contact</div><div><a href="mailto:matthew@mangano-consulting.com" class="hover:text-white">matthew@mangano-consulting.com</a></div></div>
+      <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© <span id="y"></span> ControlStackAI. All rights reserved.</div>
   </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
