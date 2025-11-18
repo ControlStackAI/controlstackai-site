@@ -12,6 +12,15 @@
 .glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}
 .nav-toggle{display:none;border:none;background:transparent;padding:0;cursor:pointer;}
 .nav-toggle-bar{display:block;width:18px;height:2px;border-radius:9999px;background:#f7f9ff;}
+.nav-item{position:relative;}
+.nav-link-parent{display:inline-flex;align-items:center;gap:.35rem;color:inherit;font:inherit;background:transparent;border:none;padding:0;cursor:pointer;}
+.nav-link-parent:hover,.nav-link-parent:focus-visible{color:#fff;}
+.submenu-caret{font-size:.75rem;transition:transform .2s ease;}
+.nav-item-has-submenu{position:relative;}
+.nav-submenu{position:absolute;top:100%;left:0;display:none;flex-direction:column;min-width:220px;margin-top:.5rem;padding:.5rem;border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;background:rgba(12,15,20,.98);box-shadow:0 20px 50px -25px rgba(0,0,0,.6);z-index:30;}
+.nav-submenu a{display:block;padding:.45rem .75rem;border-radius:.5rem;white-space:nowrap;color:inherit;}
+.nav-submenu a:hover,.nav-submenu a:focus-visible{background:hsla(0,0%,100%,.06);color:#fff;}
+.nav-item-has-submenu:hover .nav-submenu,.nav-item-has-submenu:focus-within .nav-submenu{display:flex;}
 @media (max-width:900px){
   .nav-links{position:absolute;top:100%;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:.5rem;margin-top:.75rem;padding:1rem;background:rgba(12,15,20,.98);border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;box-shadow:0 20px 50px -25px rgba(0,0,0,.6);}
   body.nav-open .nav-links{display:flex;}
@@ -20,6 +29,12 @@
   .nav-links a{width:100%;border-radius:.75rem;padding:.5rem .75rem;}
   .nav-links a:hover{background:hsla(0,0%,100%,.06);}
   .nav-links .nav-cta{justify-content:center;margin-top:.25rem;}
+  .nav-item-has-submenu{width:100%;}
+  .nav-link-parent{width:100%;justify-content:space-between;padding:.5rem .75rem;border-radius:.75rem;text-align:left;}
+  .nav-submenu{position:static;display:none;margin-top:.35rem;gap:.35rem;padding:.5rem;border-radius:.75rem;background:rgba(255,255,255,.03);}
+  .nav-item-has-submenu.submenu-open .nav-submenu{display:flex;}
+  .nav-submenu a{width:100%;}
+  .submenu-open .submenu-caret{transform:rotate(180deg);}
 }
 </style>
 </head><body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
@@ -33,9 +48,23 @@
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
       </button>
-      <nav class="nav-links hidden md:flex items-center gap-6 text-sm text-slate-300">
+            <nav class="nav-links hidden md:flex items-center gap-6 text-sm text-slate-300">
         <a href="/" class="hover:text-white">Home</a>
-        <a href="/tools.html" class="hover:text-white">Tools</a>
+        <div class="nav-item nav-item-has-submenu">
+          <button class="nav-link nav-link-parent hover:text-white" type="button">
+            <span>Tools</span>
+            <span class="submenu-caret">▾</span>
+          </button>
+          <div class="nav-submenu">
+            <a href="/tools/index.html" class="hover:text-white">Tools overview</a>
+            <a href="/tools/flight-dynamics.html" class="hover:text-white">Flight Dynamics</a>
+            <a href="/tools/flight-control.html" class="hover:text-white">Flight Control</a>
+            <a href="/tools/compliance-copilot.html" class="hover:text-white">Compliance Co-Pilot</a>
+            <a href="/tools/sim-lab.html" class="hover:text-white">Simulation Lab</a>
+            <a href="/tools/model-integration.html" class="hover:text-white">Model Integration</a>
+            <a href="/tools/dev-workbench.html" class="hover:text-white">Dev Workbench</a>
+          </div>
+        </div>
         <a href="/services.html" class="hover:text-white">Services</a>
         <a href="/about.html" class="hover:text-white">About</a>
         <a href="/contact.html" class="hover:text-white">Contact</a>
