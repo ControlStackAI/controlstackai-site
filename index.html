@@ -2,44 +2,99 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ControlStackAI — Agentic AI systems, Machine Learning, Deep Learning</title><meta name="description" content="ControlStackAI builds Agentic AI systems, Machine Learning platforms, and Deep Learning innovations that ship reliable automation with measurable impact."/>
-<meta property="og:title" content="ControlStackAI — Agentic AI systems, Machine Learning, Deep Learning"/><meta property="og:description" content="ControlStackAI builds Agentic AI systems, Machine Learning platforms, and Deep Learning innovations that ship reliable automation with measurable impact."/>
+<title>ControlStackAI — AI-native toolchain for aerospace, simulation, and compliance</title><meta name="description" content="We streamline engineering and compliance workflows and simplify DO-178C / ARP-4754A with task-based, guided flows."/>
+<meta property="og:title" content="ControlStackAI — AI-native toolchain for aerospace, simulation, and compliance"/><meta property="og:description" content="We streamline engineering and compliance workflows and simplify DO-178C / ARP-4754A with task-based, guided flows."/>
 <meta property="og:image" content="/assets/hero-agentic-matrix.svg"/>
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="/styles/tailwind-cdn.js"></script>
-<style>.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}</style>
+<style>
+.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}
+.nav-toggle{display:none;border:none;background:transparent;padding:0;cursor:pointer;}
+.nav-toggle-bar{display:block;width:18px;height:2px;border-radius:9999px;background:#f7f9ff;}
+@media (max-width:900px){
+  .nav-links{position:absolute;top:100%;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:.5rem;margin-top:.75rem;padding:1rem;background:rgba(12,15,20,.98);border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;box-shadow:0 20px 50px -25px rgba(0,0,0,.6);}
+  body.nav-open .nav-links{display:flex;}
+  .nav-toggle{display:flex;flex-direction:column;justify-content:center;gap:4px;width:24px;height:18px;border:none;background:transparent;padding:0;cursor:pointer;}
+  body.nav-open .nav-toggle .nav-toggle-bar{opacity:.9;}
+  .nav-links a{width:100%;border-radius:.75rem;padding:.5rem .75rem;}
+  .nav-links a:hover{background:hsla(0,0%,100%,.06);}
+  .nav-links .nav-cta{justify-content:center;margin-top:.25rem;}
+}
+</style>
 </head><body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
 
 <header class="sticky top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur">
-  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between relative">
     <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
-    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-      <a href="/services.html" class="hover:text-white">Services</a>
-      <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
-      <a href="#work" class="hover:text-white">Work</a>
-      <a href="/about.html" class="hover:text-white">About</a>
-      <a href="/contact.html" class="hover:text-white">Contact</a>
-    </nav>
-    <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Book a consult</a>
+    <div class="flex items-center gap-3">
+      <button class="nav-toggle md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white hover:bg-white/10" aria-label="Open navigation" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="nav-links hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/" class="hover:text-white">Home</a>
+        <a href="/tools.html" class="hover:text-white">Tools</a>
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/about.html" class="hover:text-white">About</a>
+        <a href="/contact.html" class="hover:text-white">Contact</a>
+        <a href="/contact.html" class="nav-cta inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent md:ml-2">Book a consult</a>
+      </nav>
+    </div>
   </div>
 </header>
 <section class="relative overflow-hidden">
-  <img src="/assets/hero-agentic-matrix.svg" alt="Abstract network of orchestrated AI agents" class="absolute inset-0 w-full h-full object-cover opacity-25"/>
+  <img src="/assets/hero-agentic-matrix.svg" alt="Aerospace toolchain schematic" class="absolute inset-0 w-full h-full object-cover opacity-25"/>
   <div class="relative mx-auto max-w-7xl px-4 py-28">
     <div class="max-w-3xl">
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">ControlStackAI</h1>
-      <p class="mt-5 text-lg md:text-xl text-slate-300">Agentic AI orchestration backed by production Machine Learning platforms and bespoke Deep Learning innovation for teams that ship mission-critical systems.</p>
-      <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-ink">
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Autonomous developer & ops agents</div>
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Model lifecycle governance & MLOps</div>
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Multimodal deep architectures</div>
-      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">AI-native toolchain for aerospace, simulation, and compliance</h1>
+      <p class="mt-5 text-lg md:text-xl text-slate-300">We streamline your engineering and compliance workflows.</p>
+      <p class="mt-2 text-lg md:text-xl text-slate-300">We simplify complex DO-178C / ARP-4754A processes with task-based, guided flows.</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/contact.html" class="rounded-xl bg-accent/90 px-5 py-3 text-ink font-semibold hover:bg-accent">Start a project</a>
-        <a href="/services.html" class="rounded-xl border border-white/10 px-5 py-3 text-white hover:bg-white/5">See capabilities</a>
+        <a href="/tools.html" class="rounded-xl bg-accent/90 px-5 py-3 text-ink font-semibold hover:bg-accent">Explore the toolchain</a>
+        <a href="/contact.html" class="rounded-xl border border-white/10 px-5 py-3 text-white hover:bg-white/5">Talk to us</a>
       </div>
     </div>
+  </div>
+</section>
+<section class="border-y border-white/5 bg-slate-900/50">
+  <div class="mx-auto max-w-7xl px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div>
+      <div class="text-sm uppercase tracking-[0.25em] text-accent/80">Simplify your workflow</div>
+      <p class="mt-1 text-slate-300">Connect models, simulations, and CI to certification-ready artifacts—guided, task-based workflows instead of ad-hoc documents and scripts.</p>
+    </div>
+    <a href="/tools.html" class="inline-flex items-center rounded-xl bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/15">See task-based tools →</a>
+  </div>
+</section>
+<section class="mx-auto max-w-7xl px-4 py-16">
+  <h2 class="text-3xl font-bold text-white">The ControlStackAI toolchain</h2>
+  <p class="mt-3 text-slate-300 max-w-3xl">A cohesive suite that streamlines aerospace and controls workflows from modeling and simulation through compliance and developer productivity.</p>
+  <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <a href="/tool-flight-dynamics.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Flight Dynamics</div>
+      <p class="mt-2 text-slate-300">Task-based assistant for 6-DoF analysis in MATLAB/Simulink.</p>
+    </a>
+    <a href="/tool-flight-control.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Flight Control</div>
+      <p class="mt-2 text-slate-300">Guided control-law design (NDI/INDI, LQR, PID, etc.).</p>
+    </a>
+    <a href="/tool-compliance-copilot.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Compliance Co-Pilot</div>
+      <p class="mt-2 text-slate-300">Structured DO-178C / ARP-4754A / DO-330 task lists with human-in-the-loop.</p>
+    </a>
+    <a href="/tool-simulation-lab.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Simulation Lab</div>
+      <p class="mt-2 text-slate-300">Campaign orchestration for 6-DoF, SIL/HIL, and pilot-in-the-loop.</p>
+    </a>
+    <a href="/tool-model-integration.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Model Integration</div>
+      <p class="mt-2 text-slate-300">MATLAB, Python, and CI/CD flows turned into repeatable tasks.</p>
+    </a>
+    <a href="/tool-dev-workbench.html" class="glass block rounded-2xl border border-white/5 p-6 hover:border-accent/60">
+      <div class="text-sm uppercase tracking-wide text-accent/90">Dev Workbench</div>
+      <p class="mt-2 text-slate-300">Agentic, task-based environment around Git and code reviews.</p>
+    </a>
   </div>
 </section>
 <section class="mx-auto max-w-7xl px-4 py-16">
@@ -141,4 +196,6 @@
     <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
   </div>
   <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025-09-25 ControlStackAI. All rights reserved.</div>
-</footer><a href="/contact.html" class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-accent/90 px-5 py-3 text-sm font-semibold text-ink shadow-lg shadow-accent/30 transition hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"><span>Book a consult</span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg></a></body></html>
+</footer><a href="/contact.html" class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-accent/90 px-5 py-3 text-sm font-semibold text-ink shadow-lg shadow-accent/30 transition hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"><span>Book a consult</span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg></a><script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Services — ControlStackAI</title><meta name="description" content="AI/LLM workflows & assistants, MATLAB/Simulink modernization, Dev Productivity, GitOps"/>
-<meta property="og:title" content="Services — ControlStackAI"/><meta property="og:description" content="AI/LLM workflows & assistants, MATLAB/Simulink modernization, Dev Productivity, GitOps"/>
-<meta property="og:image" content="/assets/banner-1584x396.png"/>
+<title>Flight Control Tool — ControlStackAI</title><meta name="description" content="Task-based assistant for control-law design (NDI/INDI, LQR, PID, etc.)."/>
+<meta property="og:title" content="Flight Control Tool — ControlStackAI"/><meta property="og:description" content="Task-based assistant for control-law design (NDI/INDI, LQR, PID, etc.)."/>
+<meta property="og:image" content="/assets/hero-agentic-matrix.svg"/>
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="/styles/tailwind-cdn.js"></script>
@@ -22,8 +22,8 @@
   .nav-links .nav-cta{justify-content:center;margin-top:.25rem;}
 }
 </style>
-</head><body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
-
+</head>
+<body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
 <header class="sticky top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur">
   <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between relative">
     <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
@@ -44,23 +44,39 @@
     </div>
   </div>
 </header>
-<main class="mx-auto max-w-7xl px-4 py-16">
-  <h1 class="text-4xl font-extrabold text-white">Services</h1>
-  <p class="mt-3 text-slate-300 max-w-3xl">Consulting and implementation focused on <strong>streamlining workflows</strong>, <strong>task-based toolchain setup</strong>, and <strong>compliance automation</strong> for DO-178C / ARP-4754A / DO-330.</p>
-  <div class="mt-10 grid gap-6 md:grid-cols-2">
-    <section class="rounded-2xl border border-white/5 p-6 glass"><h2 class="text-xl font-bold text-white">Toolchain setup & modernization</h2><ul class="mt-3 list-disc ml-5 text-slate-300 space-y-1"><li>Design and deploy the ControlStackAI toolchain for your org</li><li>Standardize task-based workflows across teams</li><li>Cloudflare Pages + Workers deployment</li></ul></section>
-    <section class="rounded-2xl border border-white/5 p-6 glass"><h2 class="text-xl font-bold text-white">Compliance automation</h2><ul class="mt-3 list-disc ml-5 text-slate-300 space-y-1"><li>Guided DO-178C / ARP-4754A / DO-330 task flows</li><li>Traceability, impact analysis, and evidence generation</li><li>Human-in-the-loop approvals</li></ul></section>
-    <section class="rounded-2xl border border-white/5 p-6 glass"><h2 class="text-xl font-bold text-white">Simulation & model integration</h2><ul class="mt-3 list-disc ml-5 text-slate-300 space-y-1"><li>6-DoF, SIL/HIL, and campaign orchestration</li><li>MATLAB/Simulink + Python + CI/CD pipelines</li><li>Reports that feed Compliance Co-Pilot</li></ul></section>
-    <section class="rounded-2xl border border-white/5 p-6 glass"><h2 class="text-xl font-bold text-white">Developer workflows with guardrails</h2><ul class="mt-3 list-disc ml-5 text-slate-300 space-y-1"><li>Agentic, task-based dev flows around Git and reviews</li><li>AI-assisted code/tests with standard approvals</li></ul></section>
-  </div>
+<main>
+  <section class="relative overflow-hidden border-b border-white/5">
+    <img src="/assets/hero-agentic-matrix.svg" alt="Control design schematic" class="absolute inset-0 h-full w-full object-cover opacity-20"/>
+    <div class="relative mx-auto max-w-6xl px-4 py-16">
+      <a href="/tools.html" class="text-sm text-accent hover:text-accent/80">← Back to Tools</a>
+      <h1 class="mt-3 text-4xl md:text-5xl font-extrabold text-white">Flight Control Tool</h1>
+      <p class="mt-4 max-w-3xl text-lg text-slate-300">A task-based assistant for control-law design—NDI/INDI, LQR, PID, and more. Simplify complex control design into clear steps with AI support.</p>
+    </div>
+  </section>
+  <section class="mx-auto max-w-6xl px-4 py-16 grid gap-8 md:grid-cols-2 md:items-start">
+    <div class="space-y-4">
+      <h2 class="text-2xl font-bold text-white">Guided task flows</h2>
+      <ul class="list-disc pl-5 text-slate-300 space-y-2">
+        <li>Set up plant and model assumptions</li>
+        <li>Configure candidate controllers</li>
+        <li>Run stability and performance analyses</li>
+        <li>Log and compare design iterations</li>
+      </ul>
+    </div>
+    <div class="glass rounded-2xl border border-white/5 p-6">
+      <h3 class="text-lg font-semibold text-white">AI assistance</h3>
+      <p class="mt-2 text-sm text-slate-300">AI helps draft settings, checks, and summaries—while engineers remain in the loop to review and approve changes.</p>
+    </div>
+  </section>
 </main>
 <footer class="mt-24 border-t border-white/5">
   <div class="mx-auto max-w-7xl px-4 py-10 grid gap-6 md:grid-cols-3 text-sm text-slate-400">
-    <div><div class="text-white font-semibold">ControlStackAI</div><div class="text-slate-400">Agentic AI workflows for engineering teams</div></div>
+    <div><div class="text-white font-semibold">ControlStackAI</div><div class="text-slate-400">Task-based workflows for aerospace</div></div>
     <div><div class="font-semibold text-slate-300 mb-2">Contact</div><div><a href="mailto:matthew@mangano-consulting.com" class="hover:text-white">matthew@mangano-consulting.com</a></div></div>
     <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
   </div>
-  <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025-09-25 ControlStackAI. All rights reserved.</div>
-</footer><script src="/assets/js/main.js"></script>
+  <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025 ControlStackAI. All rights reserved.</div>
+</footer>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
