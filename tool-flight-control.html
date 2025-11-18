@@ -8,7 +8,19 @@
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="/styles/tailwind-cdn.js"></script>
-<style>.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}.nav-toggle{display:none}.nav-toggle-bar{height:2px;width:20px;background:#fff;border-radius:9999px;transition:transform .2s ease,opacity .2s ease}@media (max-width:900px){.nav-links{position:absolute;top:100%;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:.5rem;margin-top:.75rem;padding:1rem;background:rgba(12,15,20,.98);border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;box-shadow:0 20px 50px -25px rgba(0,0,0,.6)}body.nav-open .nav-links{display:flex}.nav-toggle{display:inline-flex}.nav-links a{width:100%;border-radius:.75rem;padding:.5rem .75rem}.nav-links a:hover{background:hsla(0,0%,100%,.06)}.nav-links .nav-cta{justify-content:center;margin-top:.25rem}}
+<style>
+.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}
+.nav-toggle{display:none;border:none;background:transparent;padding:0;cursor:pointer;}
+.nav-toggle-bar{display:block;width:18px;height:2px;border-radius:9999px;background:#f7f9ff;}
+@media (max-width:900px){
+  .nav-links{position:absolute;top:100%;right:0;left:0;display:none;flex-direction:column;align-items:stretch;gap:.5rem;margin-top:.75rem;padding:1rem;background:rgba(12,15,20,.98);border:1px solid hsla(0,0%,100%,.08);border-radius:.75rem;box-shadow:0 20px 50px -25px rgba(0,0,0,.6);}
+  body.nav-open .nav-links{display:flex;}
+  .nav-toggle{display:flex;flex-direction:column;justify-content:center;gap:4px;width:24px;height:18px;border:none;background:transparent;padding:0;cursor:pointer;}
+  body.nav-open .nav-toggle .nav-toggle-bar{opacity:.9;}
+  .nav-links a{width:100%;border-radius:.75rem;padding:.5rem .75rem;}
+  .nav-links a:hover{background:hsla(0,0%,100%,.06);}
+  .nav-links .nav-cta{justify-content:center;margin-top:.25rem;}
+}
 </style>
 </head>
 <body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
@@ -17,7 +29,6 @@
     <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
     <div class="flex items-center gap-3">
       <button class="nav-toggle md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white hover:bg-white/10" aria-label="Open navigation" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
