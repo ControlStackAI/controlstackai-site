@@ -1,41 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>About — ControlStackAI</title><meta name="description" content="Founder Matthew Mangano — aerospace + software, AI/LLM workflows, MATLAB/Simulink, GitOps"/>
-<meta property="og:title" content="About — ControlStackAI"/><meta property="og:description" content="Founder Matthew Mangano — aerospace + software, AI/LLM workflows, MATLAB/Simulink, GitOps"/>
-<meta property="og:image" content="/assets/banner-1584x396.png"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>About — ControlStackAI</title>
+<meta name="description" content="ControlStackAI builds AI-native tooling for aerospace simulation, control, and compliance with Cloudflare-native delivery."/>
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="/styles/tailwind-cdn.js"></script>
-<style>.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}</style>
-</head><body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
+<style>
+  :root { color-scheme: dark; }
+  .page-bg { background: radial-gradient(circle at 20% 20%, rgba(180,220,255,0.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(79,70,229,0.12), transparent 30%), #0b1220; }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); }
+</style>
+</head>
+<body class="page-bg text-slate-50 antialiased selection:bg-accent/30 selection:text-ink">
+<div class="min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/logo.svg" class="h-9 w-auto" alt="ControlStackAI"/>
+        <span class="text-lg font-semibold tracking-tight text-white">ControlStackAI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/tools.html" class="hover:text-white">Tools</a>
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
+        <a href="/about.html" class="text-white font-semibold">About</a>
+        <a href="/contact.html" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold shadow-lg shadow-accent/30 hover:bg-accent">Book a consult</a>
+    </div>
+  </header>
 
-<header class="sticky top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur">
-  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
-    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-      <a href="/services.html" class="hover:text-white">Services</a>
-      <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
-      <a href="/about.html" class="hover:text-white">About</a>
-      <a href="/contact.html" class="hover:text-white">Contact</a>
-    </nav>
-    <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Book a consult</a>
-  </div>
-</header>
-<main class="mx-auto max-w-5xl px-4 py-16">
-  <h1 class="text-4xl font-extrabold text-white">About</h1>
-  <div class="mt-6 text-slate-300 space-y-4">
-    <p><strong>ControlStackAI</strong> is led by <strong>Matthew Mangano</strong>. We build agentic AI tools that are auditable and production-ready, and deliver custom MATLAB/Simulink tooling and workflow integrations across apps, toolboxes, and automation.</p>
-    <p>Platforms: Talos Linux, Kubernetes, Rook-Ceph, Cilium, MetalLB, ArgoCD; Observability with Prometheus/Grafana/Hubble.</p>
-    <p>Based in Orange County, CA — working with aerospace, robotics, and software teams nationwide.</p>
-  </div>
-</main>
-<footer class="mt-24 border-t border-white/5">
-  <div class="mx-auto max-w-7xl px-4 py-10 grid gap-6 md:grid-cols-3 text-sm text-slate-400">
-    <div><div class="text-white font-semibold">ControlStackAI</div><div class="text-slate-400">Agentic AI workflows for engineering teams</div></div>
-    <div><div class="font-semibold text-slate-300 mb-2">Contact</div><div><a href="mailto:matthew@mangano-consulting.com" class="hover:text-white">matthew@mangano-consulting.com</a></div></div>
-    <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
-  </div>
-  <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025-09-25 ControlStackAI. All rights reserved.</div>
-</footer></body></html>
+  <main class="flex-1">
+    <section class="relative overflow-hidden border-b border-white/5">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-600/10 via-sky-500/10 to-transparent"></div>
+      <div class="relative mx-auto max-w-6xl px-4 py-16 space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-wide text-accent">About</p>
+        <h1 class="text-4xl font-black text-white sm:text-5xl">Built for high-integrity engineering teams</h1>
+        <p class="max-w-3xl text-lg text-slate-200">We combine MATLAB/Simulink expertise, AI-native workflows, and Cloudflare delivery to help aerospace, defense, and industrial teams ship faster without sacrificing rigor.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 py-14 grid gap-8 lg:grid-cols-2">
+      <div class="glass rounded-3xl border border-white/10 p-8">
+        <h2 class="text-2xl font-bold text-white">Principles</h2>
+        <ul class="mt-4 space-y-3 text-slate-200">
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Simulation-first: every decision is validated against realistic plant models and flight envelopes.</span></li>
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Compliance aware: artifacts, traceability, and tool qualification run in parallel to development.</span></li>
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Edge-native: experiences and APIs land on Cloudflare for security, latency, and resilience.</span></li>
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8 space-y-4">
+        <h2 class="text-2xl font-bold text-white">Stack expertise</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <div class="text-sm font-semibold text-accent">MATLAB/Simulink</div>
+            <p class="text-sm text-slate-300">6-DoF modeling, control-law design (NDI/INDI/LQR), codegen hardening, Simulink Test/Requirements automation.</p>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-accent">Cloudflare</div>
+            <p class="text-sm text-slate-300">Pages for delivery, Workers for orchestration, D1 for evidence logging, KV for configuration.</p>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-accent">AI/ML</div>
+            <p class="text-sm text-slate-300">Agentic copilots, retrieval with citations, and safety rails tailored to regulated programs.</p>
+          </div>
+          <div>
+            <div class="text-sm font-semibold text-accent">Dev productivity</div>
+            <p class="text-sm text-slate-300">GitOps automation, hermetic builds, and developer experience tuned for mission-critical code.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl px-4 pb-16">
+      <div class="glass rounded-3xl border border-white/10 p-8 grid gap-8 md:grid-cols-[1.1fr_0.9fr] items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-white">Why ControlStackAI</h3>
+          <p class="mt-3 text-slate-300">We bridge AI-native tooling with the realities of aerospace programs: long certification timelines, hardware constraints, and the need for deterministic workflows. Our team blends hands-on control systems engineering with modern ML and edge delivery.</p>
+          <div class="mt-6 flex flex-wrap gap-3 text-sm text-ink font-semibold">
+            <span class="rounded-full bg-white/90 px-3 py-1">Pilot-in-the-loop labs</span>
+            <span class="rounded-full bg-white/90 px-3 py-1">Evidence-led reporting</span>
+            <span class="rounded-full bg-white/90 px-3 py-1">Edge-secured APIs</span>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h4 class="text-xl font-semibold text-white">Engage with us</h4>
+          <p class="mt-2 text-slate-300">We meet teams where they are: augmenting existing flight controls, hardening simulation pipelines, or integrating AI copilots with your certification plans.</p>
+          <a href="/contact.html" class="mt-4 inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Start the conversation →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-slate-300">
+      <div>
+        <div class="text-white font-semibold">ControlStackAI</div>
+        <p class="mt-2 text-slate-400">AI-native tooling for aerospace simulation, control, and compliance.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Tools</div>
+        <ul class="space-y-1">
+          <li><a href="/tools.html" class="hover:text-white">Tool suite overview</a></li>
+          <li><a href="/simulation-lab.html" class="hover:text-white">Simulation Lab</a></li>
+          <li><a href="/compliance-copilot.html" class="hover:text-white">Compliance Co-Pilot</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Contact</div>
+        <a class="block hover:text-white" href="mailto:matthew@mangano-consulting.com">matthew@mangano-consulting.com</a>
+        <div class="mt-3">
+          <a class="block hover:text-white" href="/privacy.html">Privacy</a>
+          <a class="block hover:text-white" href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025 ControlStackAI. All rights reserved.</div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,144 +1,177 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ControlStackAI — Agentic AI systems, Machine Learning, Deep Learning</title><meta name="description" content="ControlStackAI builds Agentic AI systems, Machine Learning platforms, and Deep Learning innovations that ship reliable automation with measurable impact."/>
-<meta property="og:title" content="ControlStackAI — Agentic AI systems, Machine Learning, Deep Learning"/><meta property="og:description" content="ControlStackAI builds Agentic AI systems, Machine Learning platforms, and Deep Learning innovations that ship reliable automation with measurable impact."/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>ControlStackAI — Aerospace-grade AI, simulation, and compliance tooling</title>
+<meta name="description" content="ControlStackAI delivers aerospace-grade AI-native tooling, Cloudflare-powered delivery, and MATLAB/Simulink workflows for simulation, control, and compliance."/>
+<meta property="og:title" content="ControlStackAI — Aerospace-grade AI, simulation, and compliance tooling"/>
+<meta property="og:description" content="ControlStackAI delivers aerospace-grade AI-native tooling, Cloudflare-powered delivery, and MATLAB/Simulink workflows for simulation, control, and compliance."/>
 <meta property="og:image" content="/assets/hero-agentic-matrix.svg"/>
 <link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="/styles/tailwind-cdn.js"></script>
-<style>.glass{background:rgba(255,255,255,0.05);backdrop-filter:blur(6px);}</style>
-</head><body class="bg-ink text-slate-100 antialiased selection:bg-accent/30 selection:text-ink">
+<style>
+  :root { color-scheme: dark; }
+  .page-bg { background: radial-gradient(circle at 20% 20%, rgba(180,220,255,0.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(79,70,229,0.12), transparent 30%), #0b1220; }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); }
+</style>
+</head>
+<body class="page-bg text-slate-50 antialiased selection:bg-accent/30 selection:text-ink">
+<div class="min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/logo.svg" class="h-9 w-auto" alt="ControlStackAI"/>
+        <span class="text-lg font-semibold tracking-tight text-white">ControlStackAI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/tools.html" class="hover:text-white">Tools</a>
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
+        <a href="/about.html" class="hover:text-white">About</a>
+        <a href="/contact.html" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold shadow-lg shadow-accent/30 hover:bg-accent">Book a consult</a>
+    </div>
+  </header>
 
-<header class="sticky top-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur">
-  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3"><img src="/assets/logo.svg" class="h-8 w-auto" alt="ControlStackAI"/></a>
-    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-      <a href="/services.html" class="hover:text-white">Services</a>
-      <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
-      <a href="#work" class="hover:text-white">Work</a>
-      <a href="/about.html" class="hover:text-white">About</a>
-      <a href="/contact.html" class="hover:text-white">Contact</a>
-    </nav>
-    <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Book a consult</a>
-  </div>
-</header>
-<section class="relative overflow-hidden">
-  <img src="/assets/hero-agentic-matrix.svg" alt="Abstract network of orchestrated AI agents" class="absolute inset-0 w-full h-full object-cover opacity-25"/>
-  <div class="relative mx-auto max-w-7xl px-4 py-28">
-    <div class="max-w-3xl">
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white">ControlStackAI</h1>
-      <p class="mt-5 text-lg md:text-xl text-slate-300">Agentic AI orchestration backed by production Machine Learning platforms and bespoke Deep Learning innovation for teams that ship mission-critical systems.</p>
-      <div class="mt-6 flex flex-wrap gap-3 text-sm font-semibold text-ink">
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Autonomous developer & ops agents</div>
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Model lifecycle governance & MLOps</div>
-        <div class="rounded-full bg-white/90 px-4 py-2 text-ink/90">Multimodal deep architectures</div>
+  <main class="flex-1">
+    <section class="relative overflow-hidden border-b border-white/5">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 via-sky-400/5 to-transparent"></div>
+      <div class="relative mx-auto max-w-7xl px-4 py-20 lg:py-28 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">Cloudflare Pages + Workers ready</div>
+          <h1 class="mt-4 text-4xl leading-tight font-black text-white sm:text-5xl lg:text-6xl">Aerospace-grade AI-native tooling for simulation, control, and compliance</h1>
+          <p class="mt-4 text-lg text-slate-200">ControlStackAI unifies 6-DoF modeling, control-law design, and certification workflows with AI copilots delivered over Cloudflare's global edge.</p>
+          <div class="mt-8 flex flex-wrap gap-3 text-sm text-ink font-semibold">
+            <span class="rounded-full bg-white/90 px-4 py-2">Simulation-first workflows</span>
+            <span class="rounded-full bg-white/90 px-4 py-2">Compliance in the loop</span>
+            <span class="rounded-full bg-white/90 px-4 py-2">AI-native toolchain</span>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="/tools.html" class="rounded-xl bg-accent/90 px-5 py-3 text-ink font-semibold hover:bg-accent">Explore the suite</a>
+            <a href="/contact.html" class="rounded-xl border border-white/15 px-5 py-3 text-white hover:bg-white/10">Schedule a technical review</a>
+          </div>
+        </div>
+        <div class="glass rounded-3xl border border-white/10 p-8 shadow-2xl shadow-sky-900/40">
+          <div class="text-sm font-semibold text-accent">Mission control</div>
+          <h2 class="mt-2 text-2xl font-bold text-white">Edge-delivered control stack</h2>
+          <p class="mt-3 text-slate-200">Pages serves the experiences, Workers orchestrate APIs, and D1 anchors compliance evidence — all tuned for MATLAB/Simulink-heavy programs.</p>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold text-white">Flight readiness</div>
+              <p class="text-sm text-slate-300">6-DoF models, actuator limits, and envelope protection baked into every scenario.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="text-sm font-semibold text-white">Assured delivery</div>
+              <p class="text-sm text-slate-300">Compliance copilots trace ARP-4754A, DO-178C, and DO-330 artifacts to every deploy.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="/contact.html" class="rounded-xl bg-accent/90 px-5 py-3 text-ink font-semibold hover:bg-accent">Start a project</a>
-        <a href="/services.html" class="rounded-xl border border-white/10 px-5 py-3 text-white hover:bg-white/5">See capabilities</a>
+    </section>
+
+    <section class="border-b border-white/5 bg-white/5">
+      <div class="mx-auto max-w-7xl px-4 py-10">
+        <div class="glass rounded-2xl border border-accent/40 p-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-wide text-accent">Simplify your workflow</p>
+            <h3 class="text-xl font-bold text-white">One cohesive stack for modeling, controls, simulation, and certification.</h3>
+            <p class="text-slate-300">Keep MATLAB/Simulink engineers, AI copilots, and compliance officers in sync with Cloudflare-powered delivery.</p>
+          </div>
+          <div class="flex gap-3">
+            <a href="/tools.html" class="rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">See the tools</a>
+            <a href="/contact.html" class="rounded-xl border border-white/15 px-4 py-2 text-white hover:bg-white/10">Talk to an engineer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-16 space-y-8">
+      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wide text-accent">Tool suite</p>
+          <h2 class="text-3xl font-bold text-white">Built for aerospace, simulation, and AI-native delivery</h2>
+          <p class="text-slate-300">Every tool is optimized for Cloudflare Pages + Workers with MATLAB/Simulink integration, telemetry capture, and compliance traceability.</p>
+        </div>
+        <a class="inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80" href="/tools.html">View all tools →</a>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <a href="/flight-dynamics.html" class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/60">
+          <div class="text-sm uppercase tracking-wide text-slate-300">Simulation Lab</div>
+          <h3 class="mt-2 text-xl font-semibold text-white">6-DoF Flight Dynamics</h3>
+          <p class="mt-3 text-sm text-slate-300">Model, validate, and export flight envelopes with MATLAB/Simulink and Cloudflare-hosted runbooks.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">Explore →</span>
+        </a>
+        <a href="/flight-control.html" class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/60">
+          <div class="text-sm uppercase tracking-wide text-slate-300">Controls</div>
+          <h3 class="mt-2 text-xl font-semibold text-white">Flight Control Studio</h3>
+          <p class="mt-3 text-sm text-slate-300">NDI, INDI, and LQR design with closed-loop validation, tuned for certifiable codegen.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">Explore →</span>
+        </a>
+        <a href="/compliance-copilot.html" class="group rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-accent/60">
+          <div class="text-sm uppercase tracking-wide text-slate-300">Compliance</div>
+          <h3 class="mt-2 text-xl font-semibold text-white">Compliance Co-Pilot</h3>
+          <p class="mt-3 text-sm text-slate-300">AI-assisted ARP-4754A, DO-178C, and DO-330 traceability with audit-ready exports.</p>
+          <span class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">Explore →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-16">
+      <div class="glass rounded-3xl border border-white/5 p-10 shadow-xl shadow-sky-900/30">
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-wide text-accent">Cloudflare-native</p>
+            <h2 class="text-3xl font-bold text-white">Pages for delivery, Workers for orchestration</h2>
+            <p class="mt-3 text-slate-200">Landing pages, docs, and cockpit UIs run on Pages while Workers handle lead capture, telemetry routing, and secured MATLAB/Simulink automation hooks.</p>
+            <ul class="mt-6 space-y-3 text-slate-300">
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>API origin switching for lab vs production fleets.</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>D1-backed evidence logs for certification packages.</span></li>
+              <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Edge caching for performance-sensitive pilot-in-the-loop demos.</span></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div class="text-sm font-semibold text-white">Simulation Lab</div>
+              <p class="mt-2 text-slate-300">AI-augmented HIL/SIL runs with telemetry pushed through Workers, ready for dashboards or compliance artifacts.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <div class="text-sm font-semibold text-white">Model Integration</div>
+              <p class="mt-2 text-slate-300">Bidirectional MATLAB/Simulink, Python, and CI/CD integration with opinionated runbooks for regulated teams.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-slate-300">
+      <div>
+        <div class="text-white font-semibold">ControlStackAI</div>
+        <p class="mt-2 text-slate-400">AI-native tooling for aerospace simulation, control, and compliance.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Tools</div>
+        <ul class="space-y-1">
+          <li><a href="/tools.html" class="hover:text-white">Tool suite overview</a></li>
+          <li><a href="/simulation-lab.html" class="hover:text-white">Simulation Lab</a></li>
+          <li><a href="/compliance-copilot.html" class="hover:text-white">Compliance Co-Pilot</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Contact</div>
+        <a class="block hover:text-white" href="mailto:matthew@mangano-consulting.com">matthew@mangano-consulting.com</a>
+        <div class="mt-3">
+          <a class="block hover:text-white" href="/privacy.html">Privacy</a>
+          <a class="block hover:text-white" href="/terms.html">Terms</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="mx-auto max-w-7xl px-4 py-16">
-  <div class="grid gap-8 md:grid-cols-3">
-    <article class="relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 p-8 shadow-[0_20px_45px_-30px_rgba(15,23,42,0.9)] transition duration-300 hover:border-accent/70 hover:shadow-[0_25px_55px_-30px_rgba(59,130,246,0.55)]">
-      <div class="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-accent/70 via-white/60 to-accent/40 opacity-75"></div>
-      <h2 class="mt-2 text-2xl font-semibold text-white">Agentic AI Systems</h2>
-      <p class="mt-4 text-sm text-slate-300">Tool-chaining AI that breaks goals into steps, calls APIs, checks results, and improves with feedback.</p>
-      <ul class="mt-6 space-y-3 text-sm text-slate-200">
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/90"></span><span>Multi-step planning &amp; tool use</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/60"></span><span>Automation over API workflows</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/40"></span><span>Human-in-the-loop controls</span></li>
-      </ul>
-      <a href="/services.html#agentic" class="mt-auto inline-flex items-center pt-6 text-sm font-semibold text-accent hover:text-accent/80">Learn more →</a>
-    </article>
-    <article class="relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 p-8 shadow-[0_20px_45px_-30px_rgba(15,23,42,0.9)] transition duration-300 hover:border-accent/70 hover:shadow-[0_25px_55px_-30px_rgba(59,130,246,0.55)]">
-      <div class="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-accent/70 via-white/60 to-accent/40 opacity-75"></div>
-      <h2 class="mt-2 text-2xl font-semibold text-white">Machine Learning Platforms</h2>
-      <p class="mt-4 text-sm text-slate-300">From classic models to time-series forecasting and anomaly detection tailored to your data.</p>
-      <ul class="mt-6 space-y-3 text-sm text-slate-200">
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/90"></span><span>Feature engineering</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/60"></span><span>Evaluation &amp; validation</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/40"></span><span>Productionization</span></li>
-      </ul>
-      <a href="/services.html#ml" class="mt-auto inline-flex items-center pt-6 text-sm font-semibold text-accent hover:text-accent/80">Learn more →</a>
-    </article>
-    <article class="relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 p-8 shadow-[0_20px_45px_-30px_rgba(15,23,42,0.9)] transition duration-300 hover:border-accent/70 hover:shadow-[0_25px_55px_-30px_rgba(59,130,246,0.55)]">
-      <div class="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-accent/70 via-white/60 to-accent/40 opacity-75"></div>
-      <h2 class="mt-2 text-2xl font-semibold text-white">Deep Learning Innovation</h2>
-      <p class="mt-4 text-sm text-slate-300">Vision, sequence models, and embeddings for resilient autonomy and perception pipelines.</p>
-      <ul class="mt-6 space-y-3 text-sm text-slate-200">
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/90"></span><span>RAG &amp; vector search</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/60"></span><span>Vision &amp; multimodal</span></li>
-        <li class="flex items-start gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent/40"></span><span>Fine-tuning &amp; adapters</span></li>
-      </ul>
-      <a href="/services.html#deep-learning" class="mt-auto inline-flex items-center pt-6 text-sm font-semibold text-accent hover:text-accent/80">Learn more →</a>
-    </article>
-  </div>
-</section>
-<section id="work" class="mx-auto max-w-7xl px-4 pb-16">
-  <div class="flex items-center justify-between gap-6">
-    <div>
-      <h2 class="text-3xl font-bold text-white">Signature engagements</h2>
-      <p class="mt-3 text-slate-400">A glimpse into the Agentic AI, Machine Learning, and Deep Learning outcomes we deliver.</p>
-    </div>
-    <a href="/contact.html" class="hidden md:inline-flex items-center rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/5">Book a discovery call</a>
-  </div>
-  <div class="mt-10 grid gap-8 lg:grid-cols-3">
-    <article class="glass relative flex flex-col gap-4 rounded-2xl border border-white/5 p-8">
-      <img src="/assets/work-autonomous-sre.svg" alt="Dashboard showing autonomous SRE agent collaboration" class="h-36 w-full rounded-xl object-cover"/>
-      <div class="text-sm uppercase tracking-wide text-accent/90">Agentic AI</div>
-      <h3 class="text-2xl font-semibold text-white">Autonomous release copilots for embedded controls</h3>
-      <p class="text-slate-400">Multi-agent workflow that triages firmware pull requests, generates tests, and routes findings to human reviewers with full auditability.</p>
-      <dl class="mt-2 grid gap-3 text-sm text-slate-300">
-        <div class="flex justify-between"><dt class="font-semibold text-white">Outcome</dt><dd>45% faster release reviews</dd></div>
-        <div class="flex justify-between"><dt class="font-semibold text-white">Stack</dt><dd>LangGraph, Flyte, GitLab</dd></div>
-      </dl>
-    </article>
-    <article class="glass relative flex flex-col gap-4 rounded-2xl border border-white/5 p-8">
-      <img src="/assets/work-ml-platform.svg" alt="Illustration of machine learning operations dashboard" class="h-36 w-full rounded-xl object-cover"/>
-      <div class="text-sm uppercase tracking-wide text-accent/90">Machine Learning</div>
-      <h3 class="text-2xl font-semibold text-white">Unified feature store and MLOps fabric</h3>
-      <p class="text-slate-400">Delivered data contracts, real-time feature pipelines, and continuous evaluation that keep predictive maintenance models deployable.</p>
-      <dl class="mt-2 grid gap-3 text-sm text-slate-300">
-        <div class="flex justify-between"><dt class="font-semibold text-white">Outcome</dt><dd>99.8% API uptime</dd></div>
-        <div class="flex justify-between"><dt class="font-semibold text-white">Stack</dt><dd>dbt, Feast, MLflow</dd></div>
-      </dl>
-    </article>
-    <article class="glass relative flex flex-col gap-4 rounded-2xl border border-white/5 p-8">
-      <img src="/assets/work-deep-vision.svg" alt="Visualization of deep learning perception model" class="h-36 w-full rounded-xl object-cover"/>
-      <div class="text-sm uppercase tracking-wide text-accent/90">Deep Learning</div>
-      <h3 class="text-2xl font-semibold text-white">Multimodal situational awareness for robotics</h3>
-      <p class="text-slate-400">Developed compact vision-language models that fuse telemetry, video, and maintenance logs to predict anomalies before they escalate.</p>
-      <dl class="mt-2 grid gap-3 text-sm text-slate-300">
-        <div class="flex justify-between"><dt class="font-semibold text-white">Outcome</dt><dd>3× faster anomaly detection</dd></div>
-        <div class="flex justify-between"><dt class="font-semibold text-white">Stack</dt><dd>ONNX Runtime, Triton, PyTorch</dd></div>
-      </dl>
-    </article>
-  </div>
-</section>
-<section class="mx-auto max-w-7xl px-4 pb-16">
-  <div class="glass rounded-2xl border border-white/5 p-8 md:flex md:items-center md:justify-between">
-    <div class="max-w-xl">
-      <h2 class="text-2xl font-semibold text-white">Trusted by engineering leaders</h2>
-      <p class="mt-3 text-slate-400">From aerospace to autonomy, teams rely on ControlStackAI to operationalize intelligent systems with confidence.</p>
-    </div>
-    <div class="mt-6 flex flex-wrap items-center gap-3 md:mt-0">
-      <span class="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-200">Aerospace systems</span>
-      <span class="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-200">Autonomous robotics</span>
-      <span class="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-200">Industrial IoT</span>
-      <span class="rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-200">Smart infrastructure</span>
-    </div>
-  </div>
-</section>
-<footer class="mt-24 border-t border-white/5">
-  <div class="mx-auto max-w-7xl px-4 py-10 grid gap-6 md:grid-cols-3 text-sm text-slate-400">
-    <div><div class="text-white font-semibold">ControlStackAI</div><div class="text-slate-400">Agentic AI workflows for engineering teams</div></div>
-    <div><div class="font-semibold text-slate-300 mb-2">Contact</div><div><a href="mailto:matthew@mangano-consulting.com" class="hover:text-white">matthew@mangano-consulting.com</a></div></div>
-    <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
-  </div>
-  <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025-09-25 ControlStackAI. All rights reserved.</div>
-</footer><a href="/contact.html" class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-accent/90 px-5 py-3 text-sm font-semibold text-ink shadow-lg shadow-accent/30 transition hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"><span>Book a consult</span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg></a></body></html>
+    <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025 ControlStackAI. All rights reserved.</div>
+  </footer>
+</div>
+</body>
+</html>

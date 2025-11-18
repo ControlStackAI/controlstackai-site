@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Flight Control Tool — ControlStackAI</title>
+<meta name="description" content="Design NDI/INDI/LQR controllers with MATLAB/Simulink, AI-assisted tuning, and Cloudflare delivery."/>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/styles/tailwind-cdn.js"></script>
+<style>
+  :root { color-scheme: dark; }
+  .page-bg { background: radial-gradient(circle at 20% 20%, rgba(180,220,255,0.08), transparent 35%), radial-gradient(circle at 80% 0%, rgba(79,70,229,0.12), transparent 30%), #0b1220; }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(10px); }
+</style>
+</head>
+<body class="page-bg text-slate-50 antialiased selection:bg-accent/30 selection:text-ink">
+<div class="min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50 border-b border-white/5 bg-slate-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/assets/logo.svg" class="h-9 w-auto" alt="ControlStackAI"/>
+        <span class="text-lg font-semibold tracking-tight text-white">ControlStackAI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="/tools.html" class="hover:text-white">Tools</a>
+        <a href="/services.html" class="hover:text-white">Services</a>
+        <a href="/matlab-simulink.html" class="hover:text-white">MATLAB &amp; Simulink</a>
+        <a href="/about.html" class="hover:text-white">About</a>
+        <a href="/contact.html" class="hover:text-white">Contact</a>
+      </nav>
+      <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold shadow-lg shadow-accent/30 hover:bg-accent">Book a consult</a>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="relative overflow-hidden border-b border-white/5">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-600/10 via-sky-500/10 to-transparent"></div>
+      <div class="relative mx-auto max-w-7xl px-4 py-16 space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-wide text-accent">Tool</p>
+        <h1 class="text-4xl font-black text-white sm:text-5xl">Flight Control Tool</h1>
+        <p class="max-w-3xl text-lg text-slate-200">Design and validate NDI/INDI/LQR controllers with AI-assisted tuning, MATLAB/Simulink harnesses, and edge-delivered dashboards for mission readiness.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-14 grid gap-8 lg:grid-cols-3">
+      <div class="glass rounded-2xl border border-white/10 p-6">
+        <div class="text-sm uppercase tracking-wide text-slate-300">Control synthesis</div>
+        <h3 class="mt-2 text-xl font-semibold text-white">NDI/INDI/LQR templates</h3>
+        <p class="mt-3 text-slate-300">Reference architectures for common airframes with autotuning macros and safety envelopes.</p>
+      </div>
+      <div class="glass rounded-2xl border border-white/10 p-6">
+        <div class="text-sm uppercase tracking-wide text-slate-300">Validation</div>
+        <h3 class="mt-2 text-xl font-semibold text-white">Closed-loop confidence</h3>
+        <p class="mt-3 text-slate-300">Pilot-in-the-loop options, hardware interfaces, and regression packs surfaced through Workers APIs.</p>
+      </div>
+      <div class="glass rounded-2xl border border-white/10 p-6">
+        <div class="text-sm uppercase tracking-wide text-slate-300">Compliance</div>
+        <h3 class="mt-2 text-xl font-semibold text-white">Traceable exports</h3>
+        <p class="mt-3 text-slate-300">Evidence bundles aligned to DO-178C and ARP-4754A with D1-backed hashes.</p>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 pb-16 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] items-start">
+      <div class="glass rounded-3xl border border-white/10 p-8 space-y-4">
+        <div class="text-sm font-semibold uppercase tracking-wide text-accent">What you get</div>
+        <ul class="space-y-3 text-slate-200 text-sm">
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Reusable control blocks for NDI/INDI/LQR with guardrails and gain scheduling patterns.</span></li>
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>AI-assisted tuning suggestions with citations back to simulation runs.</span></li>
+          <li class="flex gap-3"><span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent"></span><span>Pages dashboards to review closed-loop metrics, Monte Carlo sweeps, and exportables.</span></li>
+        </ul>
+        <div class="pt-4">
+          <a href="/contact.html" class="inline-flex items-center rounded-xl bg-accent/90 px-4 py-2 text-ink font-semibold hover:bg-accent">Deploy Flight Control Tool →</a>
+        </div>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-8 space-y-4">
+        <h3 class="text-xl font-semibold text-white">Pairs with</h3>
+        <ul class="space-y-3 text-sm text-slate-300">
+          <li><a class="text-accent hover:text-accent/80" href="/flight-dynamics.html">Flight Dynamics Tool</a> for plant models and envelope validation.</li>
+          <li><a class="text-accent hover:text-accent/80" href="/simulation-lab.html">Simulation Lab</a> for pilot-in-the-loop validation.</li>
+          <li><a class="text-accent hover:text-accent/80" href="/compliance-copilot.html">Compliance Co-Pilot</a> to keep evidence synchronized.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid gap-8 md:grid-cols-3 text-sm text-slate-300">
+      <div>
+        <div class="text-white font-semibold">ControlStackAI</div>
+        <p class="mt-2 text-slate-400">AI-native tooling for aerospace simulation, control, and compliance.</p>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Tools</div>
+        <ul class="space-y-1">
+          <li><a href="/tools.html" class="hover:text-white">Tool suite overview</a></li>
+          <li><a href="/simulation-lab.html" class="hover:text-white">Simulation Lab</a></li>
+          <li><a href="/compliance-copilot.html" class="hover:text-white">Compliance Co-Pilot</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold text-slate-100 mb-2">Contact</div>
+        <a class="block hover:text-white" href="mailto:matthew@mangano-consulting.com">matthew@mangano-consulting.com</a>
+        <div class="mt-3">
+          <a class="block hover:text-white" href="/privacy.html">Privacy</a>
+          <a class="block hover:text-white" href="/terms.html">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">© 2025 ControlStackAI. All rights reserved.</div>
+  </footer>
+</div>
+</body>
+</html>
