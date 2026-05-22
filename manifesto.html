@@ -4,46 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manifesto - ControlStackAI</title>
-  <meta name="description" content="A working outline for the ControlStackAI engineering-agent manifesto.">
+  <meta name="description" content="Why ControlStackAI exists: an agent platform for engineering teams that cannot treat AI as shadow IT.">
   <link rel="canonical" href="https://controlstackai.com/manifesto.html">
   <link rel="icon" href="/assets/icon-neural-grid.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="/styles/tailwind-cdn.js"></script>
-  <style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.panel{background:rgba(255,255,255,.035)}</style>
+  <style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.panel{background:rgba(255,255,255,.035)}.prose p{margin-top:1.25rem}</style>
 </head>
 <body class="bg-ink text-white antialiased">
   <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/90 backdrop-blur">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
       <a href="/" class="flex items-center gap-3"><img src="/assets/icon-neural-grid.svg" class="h-8 w-8 rounded-sm" alt=""><span class="text-sm font-semibold">ControlStackAI</span></a>
-      <div class="flex items-center gap-5 text-sm text-slate-300"><a href="/manifesto.html" class="hover:text-white">Manifesto</a><a href="/#early-access" class="rounded-md bg-accent px-3 py-2 font-medium text-white hover:bg-accent/90">Early access</a></div>
+      <div class="flex items-center gap-5 text-sm text-slate-300"><a href="/about.html" class="hover:text-white">About</a><a href="/#early-access" class="rounded-md bg-accent px-3 py-2 font-medium text-white hover:bg-accent/90">Early access</a></div>
     </nav>
   </header>
+
   <main class="mx-auto max-w-3xl px-5 py-20">
     <p class="text-sm font-medium uppercase tracking-[.2em] text-accent">Manifesto</p>
     <h1 class="mt-4 text-4xl font-semibold tracking-tight md:text-6xl">The agent platform for engineers.</h1>
-    <div class="panel mt-10 border border-white/10 p-6">
-      <p class="text-slate-300">This page is intentionally a skeleton for HERALD to draft in Matt's voice before launch. The argument should be sharp, specific, and grounded in real engineering work.</p>
-    </div>
-    <!-- HERALD: draft this -->
-    <section class="mt-12 space-y-10">
+    <p class="mt-6 text-lg leading-8 text-slate-300">Engineering work is the highest-leverage thing AI can touch. It is also the place where today&rsquo;s AI tools are weakest. This is what we are building, and why.</p>
+
+    <section class="prose mt-14 space-y-10 leading-8 text-slate-300">
       <div>
-        <h2 class="text-2xl font-semibold">Engineering tools have not caught up to agentic AI</h2>
-        <p class="mt-4 leading-8 text-slate-400">Placeholder for the gap between chat interfaces and tool-operating agents.</p>
+        <h2 class="text-2xl font-semibold text-white">1. Engineering tools were built for human operators.</h2>
+        <p>MATLAB, Simulink, Stateflow, DOORS, Polarion, CATIA &mdash; every serious engineering tool assumes a human in the loop. A licensed seat. A mouse. A reviewer. That is fine for humans. It is a problem for agents.</p>
+        <p>Agentic AI needs more than a chat window. It needs a runtime that can hold open a Simulink session for six hours, push a controller redesign through the same regression suite the human team uses, and produce an artifact that a reviewer can sign off on. None of that lives in a chat interface.</p>
       </div>
+
       <div>
-        <h2 class="text-2xl font-semibold">What an agent platform for engineers means</h2>
-        <p class="mt-4 leading-8 text-slate-400">Placeholder for runtime, integrations, review loops, artifacts, and auditability.</p>
+        <h2 class="text-2xl font-semibold text-white">2. Chat is not the unit of engineering output.</h2>
+        <p>The engineering teams we care about do not ship chat transcripts. They ship models, requirements, test reports, and signed-off design changes. An AI tool that cannot produce those artifacts in the same format your team already reviews is doing demo work, not real work.</p>
+        <p>ControlStackAI agents output artifacts. They commit to your repos, edit your models, fill in your requirements managers, and run your tests. The conversation is the seam, not the product.</p>
       </div>
+
       <div>
-        <h2 class="text-2xl font-semibold">Why regulated teams need infrastructure choices</h2>
-        <p class="mt-4 leading-8 text-slate-400">Placeholder for on-prem, VPC, air-gapped, IP boundaries, and governance.</p>
+        <h2 class="text-2xl font-semibold text-white">3. Regulated teams cannot live on shadow IT.</h2>
+        <p>ITAR. EAR. CUI. Customer NDAs. Internal IP boundaries. The engineering organizations doing the most interesting work &mdash; aerospace, defense, propulsion, industrial controls &mdash; cannot route customer designs through unmanaged consumer AI tools. That is not a tooling preference. It is a contractual and legal reality.</p>
+        <p>The honest answer for these teams is not &ldquo;use AI carefully.&rdquo; It is a platform whose deployment model, audit story, and data boundary are designed for the constraints they actually live inside. On-prem. VPC. Air-gapped when it has to be. Customer-controlled inference. Per-agent scopes. Signed actions.</p>
       </div>
+
       <div>
-        <h2 class="text-2xl font-semibold">What we believe</h2>
-        <p class="mt-4 leading-8 text-slate-400">Placeholder for principles: operate existing tools, preserve human review, make costs visible, keep data boundaries real.</p>
+        <h2 class="text-2xl font-semibold text-white">4. The leverage is in the toolchain, not the chatbot.</h2>
+        <p>An agent that can search the web is interesting. An agent that can open your Simulink model, run a parameter sweep, generate a controller variant, regenerate the test report, and open a pull request against your firmware repo &mdash; that is engineering leverage. That is what changes how a team operates.</p>
+        <p>ControlStackAI is built around tool integration first. The model layer is replaceable. The toolchain integration, the engineering context, the reviewable artifacts, and the deployment boundary are the durable parts.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold text-white">5. Inference will keep getting cheaper. Trust will not.</h2>
+        <p>Frontier model prices fall every quarter. The cost of getting an engineering team to trust an agent with their codebase, their models, their requirements, and their schedule does not. The hard part is reviewability, scope discipline, and audit &mdash; not generating more tokens.</p>
+        <p>ControlStackAI bets that the platform layer &mdash; the one that handles trust, governance, and tool operation &mdash; is where the durable value lives.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold text-white">What we believe</h2>
+        <ul class="mt-4 list-disc space-y-3 pl-6 text-slate-300">
+          <li>Agents should operate the tools engineers already use, not replace them.</li>
+          <li>Every action an agent takes should be scoped, logged, and reviewable.</li>
+          <li>The deployment boundary is the customer&rsquo;s choice, not ours.</li>
+          <li>Costs and decisions should be visible, not hidden behind a chat bubble.</li>
+          <li>Engineering teams deserve a platform built by people who have actually shipped engineering work.</li>
+        </ul>
       </div>
     </section>
+
+    <div class="mt-16 panel border border-white/10 p-6">
+      <p class="text-sm text-slate-400">If this is the platform you have been looking for, we are opening a small number of design-partner conversations.</p>
+      <a href="/#early-access" class="mt-4 inline-flex rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent/90">Request early access</a>
+    </div>
   </main>
-  <footer class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-slate-400 md:flex-row md:items-center md:justify-between"><p>&copy; 2026 ControlStackAI LLC · Wyoming · <a class="hover:text-white" href="mailto:hello@controlstackai.com">hello@controlstackai.com</a></p><div class="flex gap-4"><a href="/privacy.html" class="hover:text-white">Privacy</a><a href="/terms.html" class="hover:text-white">Terms</a></div></div></footer>
+
+  <footer class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-slate-400 md:flex-row md:items-center md:justify-between"><p>&copy; 2026 ControlStackAI LLC &middot; Wyoming &middot; <a class="hover:text-white" href="mailto:hello@controlstackai.com">hello@controlstackai.com</a></p><div class="flex gap-4"><a href="/privacy.html" class="hover:text-white">Privacy</a><a href="/terms.html" class="hover:text-white">Terms</a></div></div></footer>
 </body>
 </html>
