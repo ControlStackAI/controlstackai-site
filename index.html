@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ControlStackAI - The agent platform for engineering teams</title>
-  <meta name="description" content="AI agents that ship real engineering work - controls design, Simulink models, requirements, and test plans - running on your infrastructure.">
-  <meta property="og:title" content="ControlStackAI - The agent platform for engineering teams">
-  <meta property="og:description" content="AI agents that ship real engineering work on your infrastructure.">
+  <title>ControlStackAI - Private agent runtime for engineering teams</title>
+  <meta name="description" content="Private AI agent runtime for engineering teams working in MATLAB, Simulink, controls, flight dynamics, requirements, and verification.">
+  <meta property="og:title" content="ControlStackAI - Private agent runtime for engineering teams">
+  <meta property="og:description" content="AI agents for engineering work, deployed inside your infrastructure.">
   <meta property="og:image" content="/assets/icon-neural-grid.svg">
   <link rel="canonical" href="https://controlstackai.com/">
   <link rel="icon" href="/assets/icon-neural-grid.svg" type="image/svg+xml">
@@ -17,6 +17,7 @@
     body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
     .line{background:linear-gradient(90deg,rgba(0,102,255,.05),rgba(0,102,255,.9),rgba(255,255,255,.55),rgba(0,102,255,.05))}
     .panel{background:rgba(255,255,255,.035)}
+    .hero-grid{background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:44px 44px}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ControlStackAI LLC","url":"https://controlstackai.com","logo":"https://controlstackai.com/assets/icon-neural-grid.svg","email":"hello@controlstackai.com","founder":{"@type":"Person","name":"Matthew Mangano"},"address":{"@type":"PostalAddress","addressRegion":"WY","addressCountry":"US"}}</script>
 </head>
@@ -35,35 +36,46 @@
   </header>
 
   <main>
-    <section class="mx-auto max-w-7xl px-5 pb-20 pt-16 md:pb-28 md:pt-24">
+    <section class="hero-grid mx-auto max-w-7xl px-5 pb-16 pt-12 md:pb-24 md:pt-20">
       <div class="line mb-12 h-px w-full"></div>
       <img src="/assets/wordmark-mono.svg" class="h-auto w-full max-w-3xl invert" alt="ControlStackAI">
-      <div class="mt-12 max-w-5xl">
-        <p class="text-xl font-medium text-accent md:text-2xl">The agent platform for engineering teams.</p>
-        <h1 class="mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-white md:text-6xl">AI agents that ship real engineering work, running on your infrastructure.</h1>
-        <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">ControlStackAI gives regulated engineering teams a platform for long-running agent work: controls design, Simulink models, requirements, test plans, and reviewable technical artifacts. Agents use the tools your teams already trust.</p>
-        <div class="mt-9">
-          <a href="#early-access" class="inline-flex rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white hover:bg-accent/90">Request early access</a>
+      <div class="mt-12 grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
+        <div>
+          <p class="text-xl font-medium text-accent md:text-2xl">Private AI agents for serious engineering work.</p>
+          <h1 class="mt-5 max-w-5xl text-4xl font-semibold tracking-tight text-white md:text-6xl">Agentic engineering, deployed where your IP is allowed to live.</h1>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">ControlStackAI gives engineering teams a private runtime for long-running agents that operate MATLAB, Simulink, requirements, source control, and verification workflows. The goal is not another chat window. It is reviewable engineering output from agents that understand your toolchain and constraints.</p>
+          <div class="mt-9 flex flex-wrap gap-3">
+            <a href="#early-access" class="inline-flex rounded-md bg-accent px-5 py-3 text-sm font-semibold text-white hover:bg-accent/90">Request early access</a>
+            <a href="#platform" class="inline-flex rounded-md border border-white/15 px-5 py-3 text-sm font-semibold text-white hover:border-white/30">See platform direction</a>
+          </div>
+        </div>
+        <div class="panel border border-white/10 p-6">
+          <p class="text-sm font-medium uppercase tracking-[.2em] text-accent">Built for</p>
+          <div class="mt-5 grid gap-4 text-sm leading-6 text-slate-300">
+            <p><span class="font-semibold text-white">Controls and dynamics:</span> model analysis, linearization, trim, simulation review, test evidence.</p>
+            <p><span class="font-semibold text-white">Regulated teams:</span> private deployments, audit trails, human checkpoints, artifact history.</p>
+            <p><span class="font-semibold text-white">Engineering context:</span> agents grounded in repos, requirements, models, docs, tickets, and team conventions.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="border-y border-white/10 bg-white/[.025]">
+    <section id="platform" class="border-y border-white/10 bg-white/[.025]">
       <div class="mx-auto grid max-w-7xl gap-px px-5 py-16 md:grid-cols-3">
         <article class="panel p-6">
-          <p class="text-sm font-medium text-accent">Multi-agent runtime</p>
-          <h2 class="mt-3 text-xl font-semibold text-white">Agents that plan, build, and test</h2>
-          <p class="mt-4 leading-7 text-slate-300">Run coordinated agent teams with durable state, tool calls, plan and replan loops, review checkpoints, and audit trails.</p>
+          <p class="text-sm font-medium text-accent">Private agent runtime</p>
+          <h2 class="mt-3 text-xl font-semibold text-white">Agents that can run inside your boundary</h2>
+          <p class="mt-4 leading-7 text-slate-300">Coordinate long-running agent work on your infrastructure, with durable state, tool permissions, checkpoints, traces, and review gates.</p>
         </article>
         <article class="panel p-6">
-          <p class="text-sm font-medium text-accent">Engineering toolchain integration</p>
-          <h2 class="mt-3 text-xl font-semibold text-white">Connect the systems engineers already use</h2>
-          <p class="mt-4 leading-7 text-slate-300">Agents drive MATLAB, Simulink, requirements systems, CAD, test frameworks, and version control through MCP integrations.</p>
+          <p class="text-sm font-medium text-accent">Engineering context layer</p>
+          <h2 class="mt-3 text-xl font-semibold text-white">Give agents the context engineers rely on</h2>
+          <p class="mt-4 leading-7 text-slate-300">Ground agent work in repos, models, requirements, issue history, design notes, verification evidence, and local team standards.</p>
         </article>
         <article class="panel p-6">
-          <p class="text-sm font-medium text-accent">Your infrastructure</p>
-          <h2 class="mt-3 text-xl font-semibold text-white">Deploy where the work is allowed to run</h2>
-          <p class="mt-4 leading-7 text-slate-300">On-prem, VPC, and air-gapped deployment paths for teams with IP boundaries, data residency rules, and regulated workflows. SOC 2 is in flight.</p>
+          <p class="text-sm font-medium text-accent">Model and inference control</p>
+          <h2 class="mt-3 text-xl font-semibold text-white">Prepare for mixed inference backends</h2>
+          <p class="mt-4 leading-7 text-slate-300">Route work across approved commercial, private, and future local inference options while preserving policy, cost, and traceability.</p>
         </article>
       </div>
     </section>
@@ -71,15 +83,39 @@
     <section class="mx-auto max-w-7xl px-5 py-20">
       <div class="max-w-3xl">
         <p class="text-sm font-medium uppercase tracking-[.2em] text-accent">Who it is for</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight text-white md:text-4xl">Controls, avionics, industrial automation, and regulated engineering teams.</h2>
-        <p class="mt-5 leading-8 text-slate-300">ControlStackAI is built for organizations that see the leverage in agentic AI but cannot send customer designs, controlled data, or proprietary engineering context through unmanaged public tools.</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight text-white md:text-4xl">Controls, avionics, robotics, industrial automation, and regulated engineering teams.</h2>
+        <p class="mt-5 leading-8 text-slate-300">ControlStackAI is built for organizations that see the leverage in agentic AI but cannot send customer designs, controlled data, or proprietary engineering context through unmanaged public tools. The first focus is engineering work where correctness, provenance, and reviewability matter.</p>
+      </div>
+      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <article class="border border-white/10 p-5">
+          <h3 class="font-semibold text-white">MATLAB and Simulink</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-400">Agents can inspect models, run scripts, summarize results, and generate reviewable test artifacts.</p>
+        </article>
+        <article class="border border-white/10 p-5">
+          <h3 class="font-semibold text-white">Controls workflows</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-400">Support for trim, linearization, controller iteration, simulation evidence, and technical writeups.</p>
+        </article>
+        <article class="border border-white/10 p-5">
+          <h3 class="font-semibold text-white">Requirements and V&V</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-400">Link agent output back to source requirements, test plans, tickets, and acceptance criteria.</p>
+        </article>
+        <article class="border border-white/10 p-5">
+          <h3 class="font-semibold text-white">Team memory</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-400">Preserve decisions, constraints, interfaces, and operating procedures so agents improve with context.</p>
+        </article>
       </div>
     </section>
 
     <section class="border-y border-white/10 bg-white/[.025]">
-      <div class="mx-auto max-w-7xl px-5 py-16">
-        <p class="max-w-4xl text-2xl font-medium leading-10 text-white">Engineering tools were built for human operators. Agentic AI needs a platform layer that can operate those tools, preserve reviewability, and respect the infrastructure boundaries serious teams live inside.</p>
-        <a href="/manifesto.html" class="mt-6 inline-flex text-sm font-semibold text-accent hover:text-white">Read the manifesto</a>
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 lg:grid-cols-[1fr_28rem] lg:items-start">
+        <div>
+          <p class="max-w-4xl text-2xl font-medium leading-10 text-white">Engineering tools were built for human operators. Agentic AI needs a platform layer that can operate those tools, preserve reviewability, and respect the infrastructure boundaries serious teams live inside.</p>
+          <a href="/manifesto.html" class="mt-6 inline-flex text-sm font-semibold text-accent hover:text-white">Read the manifesto</a>
+        </div>
+        <aside class="panel border border-white/10 p-6">
+          <p class="text-sm font-medium uppercase tracking-[.2em] text-accent">Founder credibility</p>
+          <p class="mt-4 leading-7 text-slate-300">ControlStackAI is led by Matthew Mangano, an aerospace engineer who has built commercial control, simulation, and flight-dynamics tooling. The company is applying that systems mindset to private agent infrastructure for engineering teams.</p>
+        </aside>
       </div>
     </section>
 
