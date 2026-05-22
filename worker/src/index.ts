@@ -251,6 +251,37 @@ export default {
       }
     }
 
+    if (url.pathname === "/api/early-access" && request.method === "POST") {
+      try {
+        const contentType = request.headers.get("content-type") || "";
+        const body = contentType.includes("application/json")
+          ? await request.json<any>()
+          : Object.fromEntries(await request.formData());
+        const email = String(body?.email || "").slice(0, 200);
+        const company = String(body?.company || "").slice(0, 200);
+        const role = String(body?.role || "").slice(0, 200);
+        if (!email || !company || !role) return json({ error: "Missing fields" }, 400, allowOrigin);
+
+        if (env.DB) {
+          await env.DB.exec(`CREATE TABLE IF NOT EXISTS early_access (
+            id TEXT PRIMARY KEY, createdAt TEXT NOT NULL, email TEXT NOT NULL, company TEXT NOT NULL, role TEXT NOT NULL
+          );`);
+          await env.DB.prepare("INSERT INTO early_access (id, createdAt, email, company, role) VALUES (?, ?, ?, ?, ?)")
+            .bind(crypto.randomUUID(), new Date().toISOString(), email, company, role).run();
+
+          ctx.waitUntil(sendLeadEmail(env, {
+            name: role,
+            email,
+            company,
+            message: `Early access request\n\nRole: ${role}`
+          }));
+        }
+        return json({ ok: true }, 200, allowOrigin);
+      } catch {
+        return json({ error: "Bad Request" }, 400, allowOrigin);
+      }
+    }
+
     if (url.pathname === "/v1/leads" && request.method === "GET") {
       if (!isAuthorized(request, env)) return json({ error: "Unauthorized" }, 401, allowOrigin);
       if (!env.DB) return json({ leads: [] }, 200, allowOrigin);
