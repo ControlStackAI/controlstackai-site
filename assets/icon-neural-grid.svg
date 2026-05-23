@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" font-family="'Space Grotesk','Inter',system-ui,sans-serif">
+  <rect width="1024" height="1024" fill="#0A0A0A"/>
+  <text x="512" y="498" font-size="120" font-weight="700" text-anchor="middle" fill="#FFFFFF" letter-spacing="-3">ControlStack</text>
+  <text x="512" y="640" font-size="120" font-weight="400" text-anchor="middle" fill="#0066FF" letter-spacing="-3">AI</text>
+</svg>
