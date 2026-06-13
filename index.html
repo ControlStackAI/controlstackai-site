@@ -34,6 +34,7 @@
         <span class="nav-toggle-bar"></span>
       </button>
       <nav class="nav-links hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#redline" class="hover:text-white">Redline</a>
         <a href="/about.html" class="hover:text-white">About</a>
         <a href="/manifesto.html" class="hover:text-white">Manifesto</a>
         <a href="/contact.html" class="hover:text-white">Contact</a>
@@ -110,6 +111,38 @@
       <h3 class="mt-3 text-xl font-semibold text-white">Prepare for mixed inference backends</h3>
       <p class="mt-3 text-slate-300">Route work across approved commercial, private, and future local inference options without losing policy or auditability.</p>
     </article>
+  </div>
+</section>
+
+<section id="redline" class="mx-auto max-w-7xl px-4 py-16">
+  <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/45 p-8 shadow-[0_20px_45px_-30px_rgba(15,23,42,0.9)] md:p-10">
+    <div class="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-accent/70 via-white/60 to-accent/40 opacity-75"></div>
+    <div class="grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-start">
+      <div>
+        <div class="text-sm uppercase tracking-[0.25em] text-accent/80">Product: Redline</div>
+        <h2 class="mt-3 text-3xl font-bold text-white md:text-4xl">Export-control guardrails for AI agents working around controlled technical data.</h2>
+        <p class="mt-4 text-slate-300">Redline is an export-control (ITAR/EAR) guardrail and tamper-evident audit layer for AI agents. It gives aerospace and defense teams a control point and evidence trail for agents that may read, summarize, or route sensitive engineering context.</p>
+        <p class="mt-4 text-slate-300">As US policy gates frontier-model releases, value moves off the model layer and into private deployment, compliance, and model-agnostic orchestration. Teams are beginning to point agents at controlled USML technical data without a clear enforcement point.</p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#early-access" class="rounded-xl bg-accent/90 px-5 py-3 text-ink font-semibold hover:bg-accent">Request early access</a>
+          <span class="rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-slate-200">Model-agnostic · runs on your infra</span>
+        </div>
+      </div>
+      <div class="grid gap-4">
+        <article class="glass rounded-2xl border border-white/5 p-6">
+          <div class="text-sm uppercase tracking-wide text-accent/90">Classify → gate → audit</div>
+          <p class="mt-3 text-slate-300">Evaluate agent events against policy, then allow, redact, block, or escalate before controlled content leaves an approved boundary.</p>
+        </article>
+        <article class="glass rounded-2xl border border-white/5 p-6">
+          <div class="text-sm uppercase tracking-wide text-accent/90">Tamper-evident record</div>
+          <p class="mt-3 text-slate-300">Append decision metadata to a hash-chained audit trail so reviewers can inspect what happened without storing raw controlled content.</p>
+        </article>
+        <article class="glass rounded-2xl border border-white/5 p-6">
+          <div class="text-sm uppercase tracking-wide text-accent/90">Compliance support</div>
+          <p class="mt-3 text-slate-300">Redline supports an export-control compliance program. It is not legal advice, an ITAR determination, or a replacement for your empowered official.</p>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -218,6 +251,6 @@
     <div><div class="font-semibold text-slate-300 mb-2">Legal</div><a class="block hover:text-white" href="/privacy.html">Privacy</a><a class="block hover:text-white" href="/terms.html">Terms</a></div>
   </div>
   <div class="mx-auto max-w-7xl px-4 pb-8 text-xs text-slate-500">&copy; 2026 ControlStackAI LLC. All rights reserved.</div>
-</footer><a href="#early-access" class="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-accent/90 px-5 py-3 text-sm font-semibold text-ink shadow-lg shadow-accent/30 transition hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"><span>Request early access</span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg></a><script src="/assets/js/main.js"></script>
+</footer><a href="#early-access" class="fixed bottom-6 right-6 hidden items-center gap-2 rounded-full bg-accent/90 px-5 py-3 text-sm font-semibold text-ink shadow-lg shadow-accent/30 transition hover:bg-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 sm:inline-flex"><span>Request early access</span><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6"/></svg></a><script src="/assets/js/main.js"></script>
 </body>
 </html>
