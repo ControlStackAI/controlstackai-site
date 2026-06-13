@@ -1,2 +1,21 @@
-# Ignore local development environment files
+# Dependencies
+node_modules/
+
+# Local dev / secrets
 .dev.vars
+.env
+.env.local
+
+# Cloudflare / Wrangler local state & cache
+.wrangler/
+.cache/
+worker/node_modules/
+worker/.wrangler/
+
+# Build output
+dist/
+build/
+
+# Logs & OS cruft
+*.log
+.DS_Store
