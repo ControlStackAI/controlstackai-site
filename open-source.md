@@ -28,7 +28,7 @@ Status: Public source. [Source and documentation](https://github.com/alinaos-org
 
 OpenClaw channel integration for self-hosted Buzz relays over Nostr
 
-Status: Integration preview. [Source and documentation](https://github.com/alinaos-org/buzz-openclaw).
+Status: Integration preview. [Source and documentation](https://github.com/alinaos-org/buzz-openclaw). [Website](https://alinaos-org.github.io/buzz-openclaw/).
 
 ### Engram
 
