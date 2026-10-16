@@ -6,6 +6,8 @@ Use the canonical pages below for current public information. Markdown versions 
 
 ## Primary pages
 
+- [Public projects](https://controlstackai.com/open-source.md): public source directory with project maturity, websites, and upstream fork attribution.
+
 - [Home](https://controlstackai.com/index.md): Services, engineering approach, engagement model, and public Agentic OS demonstration.
 - [Agent Harness case study](https://controlstackai.com/agent-harness.md): A provider-independent runtime for contract-based execution, independent verification, policy enforcement, and signed evidence.
 - [About Matthew Mangano](https://controlstackai.com/about.md): Background, operating principles, and the kinds of teams ControlStackAI works with.
